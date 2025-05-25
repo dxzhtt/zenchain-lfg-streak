@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #121212; /* Hitam gelap, cocok dengan GIF */
+}
+
+.container {
+    text-align: center;
+    background-color: #1e1e1e; /* Abu-abu gelap untuk kontras halus */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Bayangan putih halus */
+    max-width: 90%;
+    margin: 20px;
+}
+
+h1 {
+    color: #ff4500; /* Oranye terang untuk menarik perhatian */
+    font-size: 1.8em;
+}
+
+p {
+    font-size: 1.2em;
+    color: #e0e0e0; /* Abu-abu terang untuk keterbacaan */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff4500; /* Oranye energik */
+    color: #ffffff; /* Teks putih */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+button:hover {
+    background-color: #e03e00; /* Oranye lebih gelap saat hover */
+}
+
+button:disabled {
+    background-color: #4a4a4a; /* Abu-abu gelap saat disabled */
+    cursor: not-allowed;
+}
+
+.lfg-gif {
+    width: 100%;
+    max-width: 300px; /* Membatasi ukuran untuk responsivitas */
+    height: auto;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Media query untuk layar kecil (mobile) */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5em;
+    }
+    p {
+        font-size: 1em;
+    }
+    .lfg-gif {
+        max-width: 200px; /* Ukuran lebih kecil di mobile */
+    }
+}
